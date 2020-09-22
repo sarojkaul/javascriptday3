@@ -8,15 +8,16 @@
 <body>
     <input type="number" id="input1">
     <input type="number" id="input2">
-    <button type="button">sum</button>
+    <input type="number" id="input3">
+    <button type="button" onclick="sum()">sum</button>
     <button type="button">Average</button>
     <script>
-        function sum() {
-            var a = document.getElementById("input1") + document.getElementById("input2");
-            document.write(a)
+        function sum(a,b,c) {
+            var s = document.getElementById("input1") + document.getElementById("input2") + document.getElementById("input3");
+            var avg = (document.getElementById("input1") + document.getElementById("input2") + document.getElementById("input3")) / 3 * 100;
         }
-        document.getElementById("input1 input2").onclick = sum ()
-          
+      
+
     </script>
 </body>
 </html>
