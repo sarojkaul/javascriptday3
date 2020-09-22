@@ -10,14 +10,24 @@
     <input type="number" id="input2">
     <input type="number" id="input3">
     <button type="button" onclick="sum()">sum</button>
-    <button type="button">Average</button>
+    <button type="button" onclick="avg()">Average</button>
+    <p id ="result"></p>
     <script>
-        function sum(a,b,c) {
-            var s = document.getElementById("input1") + document.getElementById("input2") + document.getElementById("input3");
-            var avg = (document.getElementById("input1") + document.getElementById("input2") + document.getElementById("input3")) / 3 * 100;
+        function sum() {
+            var s1 = document.getElementById("input1").value;
+            var s2 = document.getElementById("input2").value;
+            var s3 = document.getElementById("input3").value;
+            var total_sum = parseInt(s1) + parseInt(s2) + parseInt(s3);
+            document.getElementById("result").innerHTML += total_sum;
+            return (total_sum);
+        }
+        function avg() {
+            var avg1 = ().value / 3 * 100);
+            return (avg1);
         }
       
 
     </script>
+
 </body>
 </html>
