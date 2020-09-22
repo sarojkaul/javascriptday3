@@ -22,12 +22,14 @@
             return (total_sum);
         }
         function avg() {
-            var avg1 = ().value / 3 * 100);
+            var s1 = document.getElementById("input1").value;
+            var s2 = document.getElementById("input2").value;
+            var s3 = document.getElementById("input3").value;
+            var avg1 = (parseInt(s1) + parseInt(s2) + parseInt(s3) / 3 * 100);
+            document.getElementById("result").innerHTML += avg1;
             return (avg1);
         }
-      
-
-    </script>
+          </script>
 
 </body>
 </html>
