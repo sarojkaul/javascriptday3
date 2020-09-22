@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced1</title>
+</head>
+<body>
+	<input id="minutes" type="number">
+	<button type="button" onclick="minuteCounter()"> Submite Minutes </button>
+
+	<p id="result">  </p>
+
+	<script>
+		function minuteCounter() {
+			var minutes = document.getElementById("minutes").value;
+			var hours = minutes / 60;
+			var minutesRest = minutes % 60;
+
+			var outPut = minutes + ' minutes = ' + Math.floor(hours) + ' hour(s) and ' + minutesRest + ' minute(s).';
+
+			document.getElementById("result").innerHTML += outPut;
+
+			return outPut;
+		}
+
+
+
+
+	</script>
+
+</body>
+</html>
