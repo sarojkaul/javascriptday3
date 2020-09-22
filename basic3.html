@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function ageCalculator(birthYear) {
+            var date1 = new Date();
+            var currentYear = date1.getFullYear(); 
+         
+            var age = currentYear - birthYear;
+            var ageTwo = age - 1;
+            console.log("You are either " + age + " or " + ageTwo);
+        }
+
+        ageCalculator(1991)
+    </script>
+</body>
+</html>
